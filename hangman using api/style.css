@@ -42,6 +42,21 @@ body {
   flex-wrap: wrap;
 }
 
+.button-reload {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.test:hover {
+  cursor: pointer;
+  color: black;
+  width: 100px;
+  margin: 0 auto;
+  background-color: white;
+}
+
 .button-letter {
   padding: 0.5rem;
   width: 2.5rem;

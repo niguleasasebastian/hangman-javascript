@@ -87,4 +87,9 @@ function checkLetter(word, letter) {
 function stopGame(word) {
   console.log("Game stopped");
   secretWordDiv.innerText = `You lost, the word was ${word}`;
+  const reloadButton = document.querySelector(".button-reload");
+  reloadButton.style.display = "block";
+  reloadButton.addEventListener("click", (e) => {
+    window.location.reload();
+  });
 }
