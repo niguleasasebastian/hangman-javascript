@@ -24,16 +24,12 @@ body {
   flex-flow: column;
 }
 
-.container {
-  display: flex;
-}
-
-.image-part {
-  flex: 1 1 0;
-}
 .hangman-image {
-  width: 300px;
-  margin: 0 6rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  width: 20%;
 }
 
 .guess-part {
@@ -63,4 +59,28 @@ body {
   text-align: center;
   padding: 3rem;
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .hangman-image {
+    width: 30%;
+  }
+  .button-letter {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hangman-image {
+    width: 40%;
+  }
+  .button-letter {
+    font-size: 0.8rem;
+  }
+  .buttons {
+    width: 60%;
+  }
+  .secret-word {
+    font-size: 1.5rem;
+  }
 }
