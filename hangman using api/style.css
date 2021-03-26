@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  background-color: rgb(12, 12, 54);
+  color: white;
+  height: 100vh;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.game-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.container {
+  display: flex;
+}
+
+.image-part {
+  flex: 1 1 0;
+}
+.hangman-image {
+  width: 300px;
+  margin: 0 6rem;
+}
+
+.guess-part {
+  flex: 1 1 0;
+}
+.buttons {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-letter {
+  padding: 0.5rem;
+  width: 2.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.button-letter:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.secret-word {
+  text-align: center;
+  padding: 3rem;
+  font-size: 2rem;
+}
